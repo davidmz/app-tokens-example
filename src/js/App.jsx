@@ -1,10 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { TokenRequest } from "./TokenRequest";
-import { async } from "q";
-import { apiOrigin } from "./config";
+import { apiOrigin, storageKey } from "./config";
 import { CreatePost } from "./CreatePost";
-
-const storageKey = "freefeed-token";
 
 export function App() {
   // Load previuosly saved token for the first time
