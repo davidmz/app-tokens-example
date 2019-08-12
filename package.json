@@ -7,13 +7,12 @@
   "author": "David Mzareulyan <david@hiero.ru>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel -d docs --public-url . src/index.html",
+    "start": "rimraf docs/* && parcel src/index.html",
     "build": "rimraf docs/* && parcel build -d docs --public-url . src/index.html"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build",
-      "pre-push": "yarn build"
+      "pre-commit": "yarn build && git add docs/*"
     }
   },
   "devDependencies": {
