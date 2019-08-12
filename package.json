@@ -1,0 +1,27 @@
+{
+  "name": "app-tokens-example",
+  "version": "1.0.0",
+  "description": "Freefeed app tokens usage example",
+  "main": "index.js",
+  "repository": "https://github.com/davidmz/app-token-example",
+  "author": "David Mzareulyan <david@hiero.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel -d docs src/index.html",
+    "build": "parcel build -d docs src/index.html"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build",
+      "pre-push": "yarn build"
+    }
+  },
+  "devDependencies": {
+    "husky": "~3.0.3",
+    "parcel-bundler": "~1.12.3"
+  },
+  "dependencies": {
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0"
+  }
+}

@@ -1,0 +1,37 @@
+body,
+button,
+input,
+textarea {
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 32em;
+  padding: 1em 2em;
+}
+
+footer {
+  margin-top: 2em;
+  border-top: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 5em;
+}
+
+.error {
+  color: #900;
+}
+
+.success {
+  color: #090;
+}
